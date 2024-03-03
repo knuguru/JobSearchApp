@@ -1,4 +1,4 @@
-# Expo Router Example
+## Expo Router Example
 
 Use [`expo-router`](https://docs.expo.dev/router/introduction/) to build native navigation using files in the `app/` directory.
 
@@ -12,7 +12,28 @@ npx create-expo-app -e with-router
 
 - [Expo Router: Docs](https://docs.expo.dev/router/introduction/)
 
+## To run the app use 'npm start'
+
+
 "# JobSearchApp"
+
+This app uses Jsearch API (https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch) to perform job search and display the most popular and nearby jobs. 
+The results are diplayed in a FlatList to improve the perfomance of rendering. 
+
+The app also provides a search field to allow the user to enter the type of job they are looking for.
+Jobs can be filtered by 'Full-time', 'Part-time' and 'Contractor'. 
+
+Each job displayed as a card in the FlatList can be clicked to get the job details. Job details screen has three tabs. 'About', 'Qualifications' and 'Responsibilities'
+Each tab can be clicked to get the corresponsing details. The screen also has an 'Apply for Job' button at the button. 
+Clicking on that button opens a new browser tab where the user is provided the ability to either apply for that job or save for later. User can also sign up for new job alerts.
+
+Clicking of the 'Full-time', 'Part-time' and 'Contractor' buttons navigates the user to a new screen where job search results are filtered by the selected criteria and are presented to the user in a FlatList that is vertically scrollable. 
+
+Paging controls are available at the botton of this screen allowing users to page through the results.
+
+'React developer' jobs are displayed by default. User can change this by typing in the search input field and clicking the search button. Results are again diplayed in a new screen as a vertically aligned scrollable FlatList.
+
+This project shows us how to create and use custom hooks.
 
 <img width="170" alt="home screen" src="https://github.com/knuguru/JobSearchApp/assets/161977397/41092bae-f9d7-48e3-a6c2-37938c7f12da">
 <img width="170" alt="JobDescriptionScreen" src="https://github.com/knuguru/JobSearchApp/assets/161977397/265d517a-3d0d-49ce-ba1e-a58f59cc9d84">
